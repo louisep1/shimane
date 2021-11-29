@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  line-height: 1.4;
+  color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+p {
+  margin: 4px 0;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* my code for each specific section from here */
+
+/* Nav Bar */
+.navbar {
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* CHANGE ME - maybe white ??? */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: right; /* moves nav bar icons to far right */
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  display: flex; /* this is what places the navbar items side by side (not like the default bullet point list) */
+  padding-right: 50px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar li {
+  padding: 20px; /* so that they are not bunched up next to each other */
+}
+
+.navbar a:hover {
+  color: rgb(85, 84, 84);
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  position: relative;
+  height: 32rem; /* without this, the nexr section is hidden */
+  /*background: url(img/shinji-banner.jpg) no-repeat center, rgb(186, 216, 245);*/
+}
+
+.banner-under {
+  background: url(img/shinji-banner.jpg) no-repeat center center/cover;
+  height: 32rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.banner-inner {
+  background: url(img/shinji-banner.jpg) no-repeat center;
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  transform: translate(0, -102%);
+}
+
+.banner h2 {
+  padding: 20px 50px;
+}
+
+/* Tabs */
+.tabs {
+  padding-top: 30px;
+  background: #fff;
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabs p {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.tab-border {
+  border-bottom: #ccc 4px solid;
+}
+
+.tabs .container .tab-item:hover {
+  cursor: pointer;
+  font-weight: 650;
+}
+
+/* Tab Content */
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important; /* important means it always works - takes precedence */
+}
+
+/* actual content */
+.tab-content {
+  padding: 3rem 1rem;
+  background: #fff;
+  color: #000;
+  /*height: ?; */
+}
+
+#tab-1-content .tab-1-content-inner,
+#tab-3-content .tab-3-content-inner {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2rem;
+  /* grid-template-columns: repeat(2, 1fr); */ /* maybe this section can just be on this row but I'm not sure */
+  align-items: center;
+  justify-content: center;
+}
+
+#tab-2-content .tab-2-content-inner {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.tab-1-content-inner,
+.tab-2-content-inner,
+.tab-3-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* Footer */
+
+
+
+/* Text */
+.text-title {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
