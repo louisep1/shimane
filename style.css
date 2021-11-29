@@ -188,3 +188,33 @@ img {
 .text-md {
   font-size: 1rem;
 }
+
+/* Media Queries */
+
+@media(max-width:960px) {
+  .navbar-container {
+    padding: 5px 5px;
+  }
+  .navbar ul {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .text-title {
+    font-size: 4rem;
+  }
+
+  .tabs {
+    padding-top: 10px;
+  }
+
+  .tabs p {
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    font-size: 0.8rem;    
+  }
+}
