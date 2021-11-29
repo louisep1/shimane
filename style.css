@@ -194,14 +194,17 @@ img {
 @media(max-width:960px) {
   .navbar-container {
     padding: 10px 5px;
-  }
+   }
+
   .navbar ul {
     font-size: 0.6rem;
     font-weight: 600;
+    align-items: center;
+    text-align: center;
   }
 
   .navbar li {
-    padding: 12px;
+    margin: 1px;
   }
 
   .banner h2 {
