@@ -193,7 +193,7 @@ img {
 
 @media(max-width:960px) {
   .navbar-container {
-    padding: 10px 5px;
+    padding: 10px 0px;
    }
 
   .navbar ul {
@@ -204,7 +204,7 @@ img {
   }
 
   .navbar li {
-    padding: 8px;
+    padding: 10px;
   }
 
   .banner h2 {
