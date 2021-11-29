@@ -164,7 +164,12 @@ img {
 
 
 /* Footer */
-
+.footer {
+  text-align: right;
+  margin: 1rem 2rem;
+  color: #999;
+  font-size: 0.9rem;
+}
 
 
 /* Text */
